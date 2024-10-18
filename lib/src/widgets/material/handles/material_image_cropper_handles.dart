@@ -33,7 +33,7 @@ class MaterialImageCropperHandles extends StatelessWidget {
           ListenableBuilder(
             listenable: controller.isTransformingNotifier,
             builder: (context, child) => AnimatedOpacity(
-              opacity: controller.isTransformingNotifier.value ? 1.0 : 0.0,
+              opacity: 1.0,
               duration: const Duration(milliseconds: 100),
               curve: Curves.easeInOut,
               child: child,
